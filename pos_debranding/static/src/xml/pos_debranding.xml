@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="PosWidget">
+        <t t-jquery=".pos-logo" t-operation="replace">
+            <img class="pos-logo" src="/pos_debranding/static/src/img/logo.png" />
+        </t>
+    </t>
+    <t t-extend="UserMenu.about">
+        <t t-jquery=".user-image" t-operation="replace">
+            <img src="/pos_debranding/static/src/img/logo_about.png" alt="iStallena" title="iStallena" class="img-circle"/>
+        </t>
+    </t>
+</templates>

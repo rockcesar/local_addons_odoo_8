@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="pos_debranding_web_title assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/pos_debranding/static/src/js/web_title_assets.js"></script>
+            </xpath>
+        </template>
+        
+        <template id="custom_title" name="change title" inherit_id="web.layout">
+            <xpath expr="//title" position="replace">
+                <title>iStallena</title>
+            </xpath>
+        </template>
+    </data>
+</openerp>
